@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <script src="main.js"></script>
+  <script src="jquery-1.12.4.min.js"></script>
+
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
@@ -17,41 +21,39 @@
 <script>
 function myFunction() {
 window.open("https://westwood.roundrockisd.org");}
-</script>
-<script>
+
 function myFunction1() {
 window.open("settings.html");}
+
+function myFunction2() {
+window.open("index.html");}
 </script>
 
 <body style="background-color:grey;">
+
   <nav class="cyan darken-4 lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">PlanVIEW</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">PlanVIEW </a>
+
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
+
       </ul>
 
+<!--Nav Bar with all tabs-->
       <ul id="nav-mobile" class="side-nav">
-        <!--<li><a href="#" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">1st Block</a></li>
-        <li><a href="#" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">2nd Block</a></li>
-        <li><a href="#" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">3rd Block</a></li>
-        <li><a href="#" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">4th Block</a></li>
-        <li><a href="#" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">5th Block</a></li>
-        <li><a href="#" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">6th Block</a></li>
-        <li><a href="#" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">7th Block</a></li>
-        <li><a href="#" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">8th Block</a></li>-->
-        <a class="waves-effect waves-light btn" onclick="myFunction()"   id="1stBlock">1st Block</a>
-        <a class="waves-effect waves-light btn" <p id="2ndp"> </p>2nd Block</a>
-        <a class="waves-effect waves-light btn" onclick="myFunction()">3rd Block</a>
-        <a class="waves-effect waves-light btn" onclick="myFunction()">4th Block</a>
-        <a class="waves-effect waves-light btn" onclick="myFunction()">5th Block</a>
-        <a class="waves-effect waves-light btn" onclick="myFunction()">6th Block</a>
-        <a class="waves-effect waves-light btn" onclick="myFunction()">7th Block</a>
-        <a class="waves-effect waves-light btn" onclick="myFunction()">8th Block</a>
+        <a class="waves-effect waves-light btn" onclick="myFunction2()">Home</a>
+        <a class="waves-effect waves-light btn" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">1st Block</a>
+        <a class="waves-effect waves-light btn" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">2nd Block</a>
+        <a class="waves-effect waves-light btn" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">3rd Block</a>
+        <a class="waves-effect waves-light btn" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">4th Block</a>
+        <a class="waves-effect waves-light btn" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">5th Block</a>
+        <a class="waves-effect waves-light btn" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">6th Block</a>
+        <a class="waves-effect waves-light btn" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">7th Block</a>
+        <a class="waves-effect waves-light btn" onclick="window.open('http://westwood.roundrockisd.org', '_system', 'location=yes');">8th Block</a>
         <a class="waves-effect waves-light btn" onclick="myFunction1()">Settings</a>
-
-
-
       </ul>
+
+
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
