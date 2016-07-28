@@ -18,7 +18,7 @@
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 	</head>
-	<body class="grey darken-2">
+	<body style="background-color:SlateGrey;">
 		<header>
 			<nav class="cyan darken-4 lighten-1" role="navigation">
 				<div class="nav-wrapper container">
@@ -27,17 +27,17 @@
 						<li><a href="#">Navbar Link</a></li>
 					</ul>
 					<!--Nav Bar with all tabs-->
-					<ul id="nav-mobile" class="side-nav">
-						<a class="waves-effect waves-light btn" onclick="myFunction2()">Home</a>
-						<a class="waves-effect waves-light btn class" id="block-1" data-location="https://westwood.roundrockisd.org">1st Block</a>
-						<a class="waves-effect waves-light btn class" id="block-2" data-location="https://westwood.roundrockisd.org">2nd Block</a>
-						<a class="waves-effect waves-light btn class" id="block-3" data-location="https://westwood.roundrockisd.org">3rd Block</a>
-						<a class="waves-effect waves-light btn class" id="block-4" data-location="https://westwood.roundrockisd.org">4th Block</a>
-						<a class="waves-effect waves-light btn class" id="block-5" data-location="https://westwood.roundrockisd.org">5th Block</a>
-						<a class="waves-effect waves-light btn class" id="block-6" data-location="https://westwood.roundrockisd.org">6th Block</a>
-						<a class="waves-effect waves-light btn class" id="block-7" data-location="https://westwood.roundrockisd.org">7th Block</a>
-						<a class="waves-effect waves-light btn class" id="block-8" data-location="https://westwood.roundrockisd.org">8th Block</a>
-						<a class="waves-effect waves-light btn" onclick="myFunction1()">Settings</a>
+					<ul id="nav-mobile" class="side-nav blue-grey">
+						<a class="waves-effect waves-light btn z-depth-5" onclick="myFunction2()"><i class="material-icons right">assignment</i>Home</a>
+						<a class="waves-effect waves-light btn class z-depth-3" id="block-1" data-location="https://westwood.roundrockisd.org"><i class="material-icons right">web</i>1st Block</a>
+						<a class="waves-effect waves-light btn class z-depth-3" id="block-2" data-location="https://westwood.roundrockisd.org"><i class="material-icons right">web</i>2nd Block</a>
+						<a class="waves-effect waves-light btn class z-depth-3" id="block-3" data-location="https://westwood.roundrockisd.org"><i class="material-icons right">web</i>3rd Block</a>
+						<a class="waves-effect waves-light btn class z-depth-3" id="block-4" data-location="https://westwood.roundrockisd.org"><i class="material-icons right">web</i>4th Block</a>
+						<a class="waves-effect waves-light btn class z-depth-3" id="block-5" data-location="https://westwood.roundrockisd.org"><i class="material-icons right">web</i>5th Block</a>
+						<a class="waves-effect waves-light btn class z-depth-3" id="block-6" data-location="https://westwood.roundrockisd.org"><i class="material-icons right">web</i>6th Block</a>
+						<a class="waves-effect waves-light btn class z-depth-3" id="block-7" data-location="https://westwood.roundrockisd.org"><i class="material-icons right">web</i>7th Block</a>
+						<a class="waves-effect waves-light btn class z-depth-3" id="block-8" data-location="https://westwood.roundrockisd.org"><i class="material-icons right">web</i>8th Block</a>
+						<a class="waves-effect waves-light btn z-depth-4" onclick="myFunction1()"><i class="material-icons right">settings</i>Settings</a>
 					</ul>
 					<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 				</div>
@@ -47,18 +47,19 @@
 			<!-- 1st-->
 			<div class="row">
 				<div class="col s12 m6">
-					<div class="card amber darken-3">
+					<div class="card amber darken-3 z-depth-3">
 						<div class="card-content white-text">
 							<span class="card-title"><b>1st Block</b></span>
-							<hr/>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Mauris ac sem ornare, feugiat nunc et, ornare urna. Vestibulum porttitor,
-							ex sit amet congue efficitur, nisi leo dapibus nisi, quis ornare arcu dolor eu felis.
-							Fusce at urna vitae arcu convallis aliquet. Ut in congue turpis. Etiam consectetur egestas
-							diam vel malesuada. Vivamus accumsan lectus quis laoreet ultricies. Integer ac risus orci.
-							Sed gravida eros nisi, vitae pulvinar tortor laoreet eu. In vitae nisl eu ipsum facilisis
-							lobortis pharetra in leo. Vivamus ut turpis vitae metus laoreet sodales a sodales dolor.
-							Praesent tincidunt neque magna, in laoreet erat ultricies id. Donec in aliquet justo.
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<textarea id="textarea1" class="materialize-textarea"></textarea>
+											<label for="textarea1">Notes</label>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
 						<div class="card-action"></div>
 					</div>
@@ -67,7 +68,7 @@
 			<!-- 2nd-->
 			<div class="row">
 				<div class="col s12 m6">
-					<div class="card amber darken-3">
+					<div class="card amber darken-3 z-depth-3">
 						<div class="card-content white-text">
 							<span class="card-title"><b>2nd Block</b></span>
 							<div class="row">
@@ -75,7 +76,7 @@
 									<div class="row">
 										<div class="input-field col s12">
 											<textarea id="textarea1" class="materialize-textarea"></textarea>
-											<label for="textarea1">Textarea</label>
+											<label for="textarea1">Notes</label>
 										</div>
 									</div>
 								</form>
@@ -88,9 +89,19 @@
 			<!-- 3rd-->
 			<div class="row">
 				<div class="col s12 m6">
-					<div class="card amber darken-3">
+					<div class="card amber darken-3 z-depth-3">
 						<div class="card-content white-text">
 							<span class="card-title"><b>3rd Block</b></span>
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<textarea id="textarea1" class="materialize-textarea"></textarea>
+											<label for="textarea1">Notes</label>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
 						<div class="card-action"></div>
 					</div>
@@ -99,10 +110,19 @@
 			<!-- 4th-->
 			<div class="row">
 				<div class="col s12 m6">
-					<div class="card amber darken-3">
+					<div class="card amber darken-3 z-depth-3">
 						<div class="card-content white-text">
 							<span class="card-title"><b>4th Block</b></span>
-							<p id="demo"></p>
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<textarea id="textarea1" class="materialize-textarea"></textarea>
+											<label for="textarea1">Notes</label>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
 						<div class="card-action"></div>
 					</div>
@@ -110,10 +130,20 @@
 			</div>
 			<!-- 5th-->
 			<div class="row">
-				<div class="col s12 m6">
-					<div class="card  white">
+				<div class="col s12 m6 z-depth-3">
+					<div class="card white">
 						<div class="card-content orange-text">
 							<span class="card-title"><b>5th Block</b></span>
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<textarea id="textarea1" class="materialize-textarea"></textarea>
+											<label for="textarea1">Notes</label>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
 						<div class="card-action"></div>
 					</div>
@@ -121,21 +151,41 @@
 			</div>
 			<!-- 6th-->
 			<div class="row">
-				<div class="col s12 m6">
+				<div class="col s12 m6 z-depth-3">
 					<div class="card white">
 						<div class="card-content orange-text">
 							<span class="card-title"><b>6th Block</b></span>
-							<div class="card-action"></div>
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<textarea id="textarea1" class="materialize-textarea"></textarea>
+											<label for="textarea1">Notes</label>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
+						<div class="card-action"></div>
 					</div>
 				</div>
 			</div>
 			<!-- 7th-->
 			<div class="row">
 				<div class="col s12 m6">
-					<div class="card  white">
+					<div class="card white z-depth-3">
 						<div class="card-content orange-text">
 							<span class="card-title"><b>7th Block</b></span>
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<textarea id="textarea1" class="materialize-textarea"></textarea>
+											<label for="textarea1">Notes</label>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
 						<div class="card-action"></div>
 					</div>
@@ -144,9 +194,19 @@
 			<!-- 8th-->
 			<div class="row">
 				<div class="col s12 m6">
-					<div class="card  white">
+					<div class="card white z-depth-3">
 						<div class="card-content orange-text">
 							<span class="card-title"><b>8th Block</b></span>
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<textarea id="textarea1" class="materialize-textarea"></textarea>
+											<label for="textarea8">Notes</label>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
 						<div class="card-action"></div>
 					</div>
