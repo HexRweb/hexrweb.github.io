@@ -16,7 +16,7 @@ $("#demo").click(function(e){
 	}
 	for(let i = 1; i <= 8 ; i++)
 	{
-		pv.updateOption((prefix+i).replace(/#/g,""),newLinks[i],function(){$(prefix+i).attr("data-location",newLinks[i]});
+		pv.updateOption((prefix+i).replace(/#/g,""),newLinks[i],function(){$(prefix+i).attr("data-location",newLinks[i])});
 	}
 	Materialize.toast("Settings saved!",5000);
 });
