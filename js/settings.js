@@ -14,7 +14,7 @@ $("#demo").click(function(e){
 		}
 
 	}
-	for(let i = 0; i <= 7 ; i++)
+	for(let i = 1; i <= 8 ; i++)
 	{
 		pv.updateOption((prefix+i).replace(/#/g,""),newLinks[i],function(){$(prefix+i).attr("data-location",newLinks[i])});
 	}
