@@ -14,9 +14,16 @@ $("#demo").click(function(e){
 		}
 
 	}
-	for(let i =  ; i <= 7 ; i++)
+	for(let i =0 ; i <= 7 ; i++)
 	{
-		pv.updateOption((prefix+i+1).replace(/#/g,""),newLinks[i],function(){$(prefix+i+1).attr("data-location",newLinks[i])});
+		let j=i+1
+		pv.updateOption((prefix+j).replace(/#/g,""),newLinks[i],function(){$(prefix+j).attr("data-location",newLinks[i])});
 	}
 	Materialize.toast("Settings saved!",5000);
 });
+
+function updateInputs()
+{
+	let prefix="#block-";for(let i=1; i<=8;i++){$(prefix+i+"-link").val(pv.getOption((prefix+i).replace(/#/g,"")));}
+}
+$(document).ready(function(){updateInputs()});
