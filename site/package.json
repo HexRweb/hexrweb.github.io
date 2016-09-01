@@ -1,0 +1,8 @@
+{
+  "name": "hexr",
+  "version": "2.0.1",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-file-append": "0.0.6"
+  }
+}
