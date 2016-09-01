@@ -50,8 +50,8 @@ $hexrcopy   = "*Our Copy*";
 if($arr["success"])
 {
 
-	//Load required libraries
 
+	//Load required libraries
 	require("../assets/class.mail.php");
 	require("../assets/mail.smtp.php");
 
@@ -90,7 +90,7 @@ if($arr["success"])
 	$subject = "$fname $lname from $org wants a website";
 	$body = "
 	Hello! \n<br/>
-	\t	Thank you for requesting a website from HexR. This is your copy of the 'recepit' saying you asked for this website. If you didn't ask for this website, please contact us immediately so we don't bother you. The information below is what you provided to us. \n\n<br/><br/>
+	\t	Thank you for requesting a website from HexR. This is your copy of the 'receipt' saying you asked for this website. If you didn't ask for this website, please contact us immediately so we don't bother you. The information below is what you provided to us. \n\n<br/><br/>
 	Information: \n<br/>
 	<strong>First name      </strong> : $fname  \n<br/>
 	<strong>Last name       </strong> : $lname  \n<br/>
@@ -127,7 +127,21 @@ if($arr["success"])
 	home_functions::print_header("","request","Request Your Site");
 	$mailerSuccess = $mailer->send();
 	$meSuccess =$meMailer->send();
-?><div id="status">Email to <?php echo $email; ?>: <?php echo $mailerSuccess;?><br/>Email to HexR: <?php echo $meSuccess; ?></div><div class="container"><h1>Thanks for requesting a site!</h1><p class="flow-text">We just sent you an email with the following content:</p><blockquote><p><?php print $body; ?></p></blockquote><p class="flow-text">We'll respond to you as soon as possible.</p></div><?php
+?>
+<div id="status">
+	Email to <?php echo $email; ?>: <?php echo $mailerSuccess;?>
+	<br/>
+	Email to HexR: <?php echo $meSuccess; ?>
+</div>
+<div class="container">
+	<h1>Thanks for requesting a site!</h1>
+	<p class="flow-text">We just sent you an email with the following content:</p>
+	<blockquote>
+		<p><?php print $body; ?></p>
+	</blockquote>
+	<p class="flow-text">We'll respond to you as soon as possible.</p>
+</div>
+<?php
 
 home_functions::get_footer();
 exit();
