@@ -1,0 +1,16 @@
+{
+  "name": "hexr-site-builder",
+  "version": "2.2.0",
+  "description": "The builder to create sites for HexR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HexR",
+  "license": "ISC",
+  "devDependencies": {
+    "assemble": "~0.4.37",
+    "grunt": "~0.4.3",
+    "grunt-contrib-htmlmin": "^2.0.0"
+  }
+}
